@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage4.master.cs" Inherits="MasterPage4" %>
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+              <style type="text/css"> 
+        .captionOrange, .captionBlack
+        {
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .captionOrange
+        {
+            background: #EB5100;
+            background-color: rgba(235, 81, 0, 0.6);
+        }
+        .captionBlack
+        {
+        	font-size:16px;
+            background: #000;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+        {
+        	color: #ffffff;
+        	text-decoration: none;
+        }
+        a.captionOrange:hover
+        {
+            color: #eb5100;
+            text-decoration: underline;
+            background-color: #eeeeee;
+            background-color: rgba(238, 238, 238, 0.7);
+        }
+        .bricon
+        {
+            background: url(../img/browser-icons.png);
+        }
+    </style>
+<title>Web Shop</title>
+<meta http-equWeb Shop</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="default.css" title="default"/>
+  <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+  
+    <meta name="viewport" content="width=device-width">
+    
+
+     <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    </head>
+<body>
+    <form id="form1" runat="server">
+
+        <div style="height: 194px"> 
+            <div style="height: 183px; width: 278px">
+                <img src="img/images%20(10).jpg" style="width: 279px; height: 182px" />
+
+            </div>
+            <div style="width: 88px; margin-left:300px;margin-top:-150px; height: 105px;">
+                <img src="img/images%20(34).jpg" style="height: 98px; width: 85px" />
+            </div>
+            <div style="margin-left:400px; width: 978px; margin-top:-200px; height: 172px;">
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            <asp:Timer ID="Timer1" Interval="3000" runat="server" OnTick="Timer1_Tick"></asp:Timer>
+             <div style="margin-left:0px;margin-top:-100px; height: 186px; width: 852px;">
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+               
+                <Triggers>
+                    <asp:AsyncPostBackTrigger ControlID="Timer1" />
+                </Triggers>
+                <ContentTemplate>
+                    <asp:Image ID="Image1" ImageUrl="~/10.jpg" Height="171px" Width="740px" runat="server" />
+                </ContentTemplate>
+             
+            </asp:UpdatePanel>
+        </div> 
+            
+
+        </div>
+            </div>
+          <div style="height: 55px; margin-top:50px">
+               <div id="Top_menu" style="margin-top:0px;margin-left:0px;width:1248px"><a  href="UserInfo.aspx"><span>Userinfo</span><a  href="Update_User.aspx"><span>UpdateUser</span></a> <a  href="Response_Blood.aspx">User_request</a><a  href="Change_password.aspx"><span>ChangePassword</span></a><a  href="Default.aspx"><span>Logout</span></a></div>
+          </div>
+       
+    <center>
+            <div>
+                 <asp:ContentPlaceHolder id="ContentPlaceHolder6" runat="server">
+    </asp:ContentPlaceHolder>
+            </div>
+   
+            </center>
+
+
+
+       
+        
+    </form>
+</body>
+</html>
+
+
+
+ 
+

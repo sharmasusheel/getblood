@@ -1,0 +1,148 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="request.master.cs" Inherits="request" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+              <style type="text/css"> 
+        .captionOrange, .captionBlack
+        {
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .captionOrange
+        {
+            background: #EB5100;
+            background-color: rgba(235, 81, 0, 0.6);
+        }
+        .captionBlack
+        {
+        	font-size:16px;
+            background: #000;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+        {
+        	color: #ffffff;
+        	text-decoration: none;
+        }
+        a.captionOrange:hover
+        {
+            color: #eb5100;
+            text-decoration: underline;
+            background-color: #eeeeee;
+            background-color: rgba(238, 238, 238, 0.7);
+        }
+        .bricon
+        {
+            background: url(../img/browser-icons.png);
+        }
+        .blink_me {
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	-moz-animation-name: blinker;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+
+	animation-name: blinker;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+        @-moz-keyframes blinker {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+@-webkit-keyframes blinker {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+@keyframes blinker {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+    </style>
+<title>Web Shop</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="default.css" title="default"/>
+  <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+  
+    <meta name="viewport" content="width=device-width">
+    <asp:ContentPlaceHolder id="ContentPlaceHolder5" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    </head>
+<body>
+    <form id="form1" runat="server">
+<div id="WholePage">
+  <div id="Inner">
+    <div id="Container">
+      <div id="Div1">
+        <div id="Head_left">
+          <div id="Leaf_top"></div>
+            <div style="margin-left:270px; width: 48px; height: 56px; margin-top:-120px"><img src="img/images%20(34).jpg" style="height: 60px; width: 45px;" /></div>
+        </div>
+        <div id="Head_right" style="margin-top:0px; margin-left: 10px;"  >
+          <div id="Logo">
+              <div id="Name"><span class="blue" style="margin-left:30px"></span><span>Get</span><span class="blue">Blood</span> </div>
+            <div id="Informations">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Donate Blood and save Life </div>
+            <div style="margin-left:300px; height: 156px; width: 270px; background-image:url('img/images%20(37).jpg');margin-top:-70px">
+                
+            </div>
+          </div>
+        
+      </div>
+      <div id="CentralPart">
+        
+          
+        
+      </div>
+      <div id="Bottom" style="margin-top:-50px">
+          <div style="background-color:maroon">
+         <div id="Top_menu" style="margin-top:100px;margin-left:-80px"><a class="home" href="Default.aspx"><span>Home</span></a><a class="contact" href="About Blood.aspx"><span>AboutBlood</span></a>   <a class="help" href="User_Profile.aspx"><span>UserProfile</span></a><a class="help" href="get_profile.aspx"><span>GetProfile</span></a> <a class="kart" href="Donor_Guide.aspx">DonorGuide</a><a class="orders" href="Media.aspx"><span>Media</span></a><a class="help" href="search_blood.aspx"><span>Search</span></a><a class="contact" href="Contactus.aspx"><span>ContactUs</span></a><a class="orders" href="Default.aspx"><span>Logout</span></a></div>
+        </div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+          <div>
+                 <marquee bgcolor="#d9d9ff" hspace="198" vspace="0" style="width: 890px" >
+               
+               <h1 style="color:darkblue" > WELCOME TO GET BLOOD</h1></marquee>
+            </div>
+       
+        <div style="margin-top:10px; margin-left:230px" >
+          
+            <center style="width: 895px; margin-top:40px">
+            <table>
+                <tr>
+                    <td>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder6" runat="server">
+        
+                <p>
+                    </p>
+        
+        </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+                </center>
+
+        </div>
+    </form>
+</body>
+</html>

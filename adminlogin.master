@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminlogin.master.cs" Inherits="adminlogin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+              <style type="text/css"> 
+        .captionOrange, .captionBlack
+        {
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .captionOrange
+        {
+            background: #EB5100;
+            background-color: rgba(235, 81, 0, 0.6);
+        }
+        .captionBlack
+        {
+        	font-size:16px;
+            background: #000;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+        {
+        	color: #ffffff;
+        	text-decoration: none;
+        }
+        a.captionOrange:hover
+        {
+            color: #eb5100;
+            text-decoration: underline;
+            background-color: #eeeeee;
+            background-color: rgba(238, 238, 238, 0.7);
+        }
+        .bricon
+        {
+            background: url(../img/browser-icons.png);
+        }
+    </style>
+<title>Web Shop</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="default.css" title="default"/>
+  <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+  
+    <meta name="viewport" content="width=device-width">
+    
+
+     <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    </head>
+<body>
+    <form id="form1" runat="server">
+<div id="WholePage">
+  <div id="Inner">
+    <div id="Container">
+      <div id="Div1">
+        <div id="Head_left">
+          <div id="Leaf_top"></div>
+            
+      </div>
+ 
+
+        
+        <div id="Head_right" style="margin-top:-180px;margin-left:400px"  >
+          <div id="Logo">
+              <div id="Name"><span class="blue" style="margin-left:30px"></span><span>Get</span>&nbsp;<span class="blue">Blood</span> </div>
+            <div id="Informations">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Donate Blood and save Life </div>
+            <div style="margin-left:300px; height: 156px; width: 270px; background-image:url('img/images%20(37).jpg');margin-top:-70px">
+                
+            </div>
+          </div>
+        
+      </div>
+      
+      
+        <div class="down2">
+          <p> &nbsp;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          <div style="margin-top:500px">
+                <marquee bgcolor="#d9d9ff" hspace="220" vspace="0" >
+               
+               <h1 style="color:darkblue" > WELCOME TO GET BLOOD</h1></marquee>
+            </div>
+       
+        <div style="margin-top:10px" >
+          
+            <center>
+            <table>
+                <tr>
+                    <td>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder6" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+                </center>
+
+        </div>
+    </form>
+</body>
+</html>
+

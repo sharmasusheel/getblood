@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage5.master.cs" Inherits="MasterPage5" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+              <style> 
+        .captionOrange, .captionBlack
+        {
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .captionOrange
+        {
+            background: #EB5100;
+            background-color: rgba(235, 81, 0, 0.6);
+        }
+        .captionBlack
+        {
+        	font-size:16px;
+            background: #000;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+        {
+        	color: #ffffff;
+        	text-decoration: none;
+        }
+        a.captionOrange:hover
+        {
+            color: #eb5100;
+            text-decoration: underline;
+            background-color: #eeeeee;
+            background-color: rgba(238, 238, 238, 0.7);
+        }
+        .bricon
+        {
+            background: url(../img/browser-icons.png);
+        }
+    </style>
+<title>Web Shop</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="default2.css" rel="stylesheet" />
+     <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+       
+  
+    <meta name="viewport" content="width=device-width">
+    
+    </head>
+<body>
+    <form id="form1" runat="server">
+<div id="WholePage">
+  <div id="Inner">
+    <div id="Container">
+      <div id="Div1">
+        <div id="Head_left">
+          <div id="Leaf_top"></div>
+            <div style="margin-left:270px; width: 48px; height: 56px; margin-top:50px"><img src="img/images%20(34).jpg" style="height: 60px" /></div>
+        </div>
+        <div id="Head_right"  >
+          <div id="Logo">
+              <div id="Name"><span class="blue" style="margin-left:30px">G</span><span>et</span>&nbsp;<span class="blue">B</span><span>lood</span> </div>
+            <div id="Informations">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Donate Blood and save Life </div>
+            <div style="margin-left:300px; height: 156px; width: 270px; background-image:url('img/images%20(37).jpg');margin-top:-100px">
+                
+            </div>
+          </div>
+          <div id="Top_menu"> <a class="kart" href="Default2.aspx"><span>Admin</span></a>  <a class="contact" href="cntatus.aspx"><span>Contact us</span></a><a class="orders" href="media_infoaspx.aspx"><span>Media</span></a> <a class="help" href="Abt_blod.aspx"><span>AboutBlood</span></a> <a class="home" href="Default.aspx"><span>Home</span></a> </div>
+        </div>
+      </div>
+      <div id="CentralPart">
+          
+        <div id="RightPart" style="margin-left:0px;float:right; height: 622px;margin-top:100px">
+          <div id="Page" style="margin-top:-100px;margin-left:30px" >
+            
+ <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+   
+        </asp:ContentPlaceHolder>
+            
+            
+          </div>
+        </div>
+        
+      </div>
+      <div id="Bottom">
+        <p class="down"> </p>
+        <div class="down2">
+          <p> <a href="http://validator.w3.org/check?uri=referer"><img src="img/images.jpg" style="margin-top:0px" alt="Valid XHTML 1.1" /></a> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </form>
+</body>
+</html>
